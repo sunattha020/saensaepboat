@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+/* ดอกจันคือ นำไปใช้ทั้งเอกสาร ใส่บ้อกให้มัน */
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ใช้ฟ้อนต่างๆ */
+
+header{
+/* ทำเฮดเด้อ , เลือกขนาดแถบกี่พิกเซล */
+    background-color: rgb(20, 30, 99);
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+
+    float: left;
+    width: 15%;
+    /* กว้าง30% article70 */
+    height: 4000px;
+    background-color: rgb(108, 158, 205);
+    padding: 20px;
+    color:rgb(226, 229, 234)
+}
+
+nav ul{
+list-style-type: none;
+padding:0;
+}
+
+
+article{
+float: left;
+padding: 20px;
+width: 85%;
+background-color: rgb(198, 214, 236);
+height: 4000px; ;
+text-align: justify;
+}
+
+footer{
+    background-color: rgb(47, 86, 137);
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+@media(max-width: 600px){
+nav,article{
+width: 100%;
+height: auto;
+}
+}
+
+.circular{
+    border-radius: 100%;
+}
+
+    
+    h3{
+        color: rgb(155, 177, 216);
+    }
+    
+    h2{
+        color: rgb(8, 48, 68);
+    }
+    p{
+    color:rgb(9, 62, 93);
+    }
