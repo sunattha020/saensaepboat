@@ -11,7 +11,7 @@ body{
 
 header{
 /* ทำเฮดเด้อ , เลือกขนาดแถบกี่พิกเซล */
-    background-color: rgb(20, 30, 99);
+    background-color: rgb(126, 23, 23);
     padding: 30px;
     text-align: center;
     font-size: 25px;
@@ -24,7 +24,7 @@ nav{
     width: 15%;
     /* กว้าง30% article70 */
     height: 4000px;
-    background-color: rgb(108, 158, 205);
+    background-color: rgb(219, 203, 170);
     padding: 20px;
     color:rgb(226, 229, 234)
 }
@@ -39,13 +39,13 @@ article{
 float: left;
 padding: 20px;
 width: 85%;
-background-color: rgb(198, 214, 236);
+background-color: rgb(255, 255, 255);
 height: 4000px; ;
 text-align: justify;
 }
 
 footer{
-    background-color: rgb(47, 86, 137);
+    background-color: rgb(135, 27, 27);
     padding: 10px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -65,12 +65,12 @@ height: auto;
 
     
     h3{
-        color: rgb(155, 177, 216);
+        color: rgb(198, 185, 185);
     }
     
     h2{
-        color: rgb(8, 48, 68);
+        color: rgb(68, 8, 9);
     }
     p{
-    color:rgb(9, 62, 93);
+    color:rgb(93, 9, 9);
     }

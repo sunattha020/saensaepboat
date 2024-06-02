@@ -62,40 +62,6 @@
         <center><h5>Khlong Saensaep Boat Service</h5></center>
     </header>
 
-    <nav>
-        <!-- ทำlist ภาค -->
-    <ul>
-        <li><a href="index.html">เรือคลองแสนแสบ</a></li>
-            <li><a href="PanfaLeelard.html">ผ่านฟ้าลีลาศ</a></li>
-            <li><a href="bobaemarket.html.html">ตลาดโบ๊เบ๊</a></li>
-            <li><a href="pharoenphon.html">สะพานเจริญผล</a></li>
-            <li><a href="SaphanHuaChang.html">สะพานหัวช้าง</a></li>
-            <li><a href="Pratunam.html">ประตูน้ำ</a></li>
-            <li><a href="Pratunam.html">ชิดลม</a></li>
-            <li><a href="Pratunam.html">สะพานวิทยุ</a></li>
-            <li><a href="Asoke.html">นานาเหนือ</a></li>
-            <li><a href="Asoke.html">นานาชาติ</a></li>
-            <li><a href="Asoke.html">อโศก</a></li>
-            <li><a href="swu.html.html">มศว ประสานมิตร</a></li>
-            <li><a href="italthai.html">อิตัลไทย</a></li>
-            <li><a href="bandon.html">สุเหร่าบ้านดอน</a></li>
-            <li><a href="tonglor.html">ทองหล่อ</a></li>
-            <li><a href="Charnissara.html">ชาญอิสระ</a></li>
-            <li><a href="Vijit School.html">โรงเรียนวิจิตร</a></li>
-            <li><a href="Klong Tan.html">สะพานคลองตัน</a></li>
-            <li><a href="Ramkhamhaeng1.html">รามหนึ่ง</a></li>
-            <li><a href="The mall 3.html">เดอะมอลล์ 3</a></li>
-            <li><a href="Ramkhamhaeng 29.html">รามคำแหง 29</a></li>
-            <li><a href="Wat Thepleela.html">วัดเทพลีลา</a></li>
-            <li><a href="Ramkhamhaeng University Pier.html">ม.รามคำแหง</a></li>
-            <li><a href="Saphan Mit Mahat Thai.html">สะพานมิตรมหาดไทย</a></li>
-            <li><a href="Wat Klang Pier.html">วัดกลาง</a></li>
-            <li><a href="The mall BangKapi.html">เดอะมอลล์บางกะปิ</a></li>
-            <li><a href="BangKapi.html">บางกะปิ</a></li>
-            <li><a href="Wat Sriboonreung.html">วัดศรีบุญเรือง</a></li>
-    </ul>
-    </nav>
-
 
     <article>
         <p><center><h3>อัตราค่าโดยสารเรือคลองแสนแสบ</h3></center></p>
@@ -170,8 +136,11 @@
 
         <p><b>ราคาค่าโดยสาร</b></p>
 
+   
         <button onclick="showResult()">แสดงค่าโดยสาร</button>
         <div id="result" class="result"></div>
+        
+
     </div>
 
 
@@ -663,7 +632,7 @@
 
 
     <!-- แบ่งส่วนหน้าจอ -->
-    <div id="map" style="width : 64% ; height : 78% ; left: 15px; top: 20px"> </div>
+    <div id="map" style="width : 78% ; height : 78% ; left: 35px; top: 20px"> </div>
 
     <!-- ส่วนของJavascript พิมพ์ให้อยู่ในScript -->
     <!-- 1.เรียกbasemap // 2.layer data // 3.interaction tool,element -->
@@ -729,41 +698,36 @@
 var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
-
-
-
-
-
     // การเพิ่มข้อมูลลงในแผนที่ โดยแสดงข้อมูลสถานที่ท่องเที่ยวหลายจุด
     var place = [
-        ["<b>ท่าผ่านฟ้าลีลาศ", 13.7555579, 100.5063914],
-        ["<b>ท่าตลาดโบ้เบ้", 13.7534400, 100.5158800],
-        ["<b>ท่าสะพานเจริญผล", 13.7497891, 100.5243482],
-        ["<b>ท่าสะพานหัวช้าง", 13.7491935, 100.5307185],
-        ["<b>ท่าประตูน้ำ(ขาออก)", 13.7492100, 100.5415400],
-        ["<b>ท่าประตูน้ำ(ขาเข้า)", 13.7493630, 100.5413385],
-        ["<b>ท่าชิดลม", 13.7486465, 100.5445420],
-        ["<b>ท่าสะพานวิทยุ", 13.7482666, 100.5481779],
-        ["<b>ท่านานาเหนือ", 13.7482554, 100.5540009],
-        ["<b>ท่านานาชาติ", 13.7483569, 100.5591518],
-        ["<b>ท่าอโศก", 13.7478955, 100.5629234],
-        ["<b>ท่ามศว ประสานมิตร", 13.7472931, 100.5658098],
-        ["<b>ท่าอิตัลไทย", 13.7459523, 100.5734931],
-        ["<b>ท่าสุเหร่าบ้านดอน", 13.7441389, 100.5814371],
-        ["<b>ท่าทองหล่อ", 13.7431917, 100.5858601],
-        ["<b>ท่าชาญอิสระ", 13.7427400, 100.5884700],
-        ["<b>ท่าโรงเรียนวิจิตร", 13.7415059, 100.5941031],
-        ["<b>ท่าสะพานคลองตัน", 13.7418671, 100.5982571],
-        ["<b>ท่ารามหนึ่ง", 13.7433300, 100.5989400],
-        ["<b>ท่าเดอะมอลล์ 3", 13.7546477, 100.6081523],
-        ["<b>ท่ารามคำแหง 29", 13.7580400, 100.6118500],
-        ["<b>ท่าวัดเทพลีลา", 13.7598420, 100.6136823],
-        ["<b>ท่าม.รามคำแหง", 13.7615032, 100.6183513],
-        ["<b>ท่าสะพานมิตรมหาดไทย", 13.7621583, 100.6236919],
-        ["<b>ท่าวัดกลาง", 13.7634593, 100.6335022],
-        ["<b>ท่าเดอะมอลล์บางกะปิ", 13.7646340, 100.6434304],
-        ["<b>ท่าบางกะปิ", 13.7650192, 100.6473724],
-        ["<b>ท่าวัดศรีบุญเรือง", 13.7673237, 100.6515881]  
+        ["<a href='PanfaLeelard.html'>ผ่านฟ้าลีลาศ</a>", 13.7555579, 100.5063914],
+        ["<a href='bobaemarket.html.html'>ตลาดโบ๊เบ๊</a>", 13.7534400, 100.5158800],
+        ["<a href='pharoenphon.html'>สะพานเจริญผล</a>", 13.7497891, 100.5243482],
+        ["<a href='SaphanHuaChang.html'>สะพานหัวช้าง</a>", 13.7491935, 100.5307185],
+        ["<a href='Pratunam.html'>ประตูน้ำ(ขาออก)</a>", 13.7492100, 100.5415400],
+        ["<a href='Pratunam.html'>ประตูน้ำ(ขาออก)</a>", 13.7493630, 100.5413385],
+        ["<a href='Pratunam.html'>ชิดลม</a>", 13.7486465, 100.5445420],
+        ["<a href='Pratunam.html'>สะพานวิทยุ</a>", 13.7482666, 100.5481779],
+        ["><a href='Asoke.html'>นานาเหนือ</a>", 13.7482554, 100.5540009],
+        ["<a href='Asoke.html'>นานาชาติ</a>", 13.7483569, 100.5591518],
+        ["<a href='Asoke.html'>อโศก</a>", 13.7478955, 100.5629234],
+        ["<a href='swu.html.html'>มศว ประสานมิตร</a>", 13.7472931, 100.5658098],
+        ["><a href='italthai.html'>อิตัลไทย</a>", 13.7459523, 100.5734931],
+        ["<a href=bandon.html'>สุเหร่าบ้านดอน</a>", 13.7441389, 100.5814371],
+        ["<a href='tonglor.html'>ทองหล่อ</a>", 13.7431917, 100.5858601],
+        ["<a href='Charnissara.html'>ชาญอิสระ</a>", 13.7427400, 100.5884700],
+        ["<a href='Vijit School.html'>โรงเรียนวิจิตร</a>", 13.7415059, 100.5941031],
+        ["<a href='Klong Tan.html'>สะพานคลองตัน</a>", 13.7418671, 100.5982571],
+        ["<a href='Ramkhamhaeng1.html'>รามหนึ่ง</a>", 13.7433300, 100.5989400],
+        ["<a href='The mall 3.html'>เดอะมอลล์ 3</a>", 13.7546477, 100.6081523],
+        ["<a href='Ramkhamhaeng 29.html'>รามคำแหง 29</a>", 13.7580400, 100.6118500],
+        ["<a href='Wat Thepleela.html'>วัดเทพลีลา</a>", 13.7598420, 100.6136823],
+        ["<a href='Ramkhamhaeng University Pier.html'>ม.รามคำแหง</a>", 13.7615032, 100.6183513],
+        ["<a href='Saphan Mit Mahat Thai.html'>สะพานมิตรมหาดไทย</a>", 13.7621583, 100.6236919],
+        ["<a href='Wat Klang Pier.html'>วัดกลาง</a>", 13.7634593, 100.6335022],
+        ["<a href='The mall BangKapi.html'>เดอะมอลล์บางกะปิ</a>", 13.7646340, 100.6434304],
+        ["<a href='BangKapi.html'>บางกะปิ</a>", 13.7650192, 100.6473724],
+        ["<a href='Wat Sriboonreung.html'>วัดศรีบุญเรือง</a>", 13.7673237, 100.6515881]  
     ];
 
 
@@ -810,7 +774,7 @@ var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 <footer>
     <br>
     <center><img class="circular" src="https://th.bing.com/th/id/OIP.CKzoAqakgFZn6BjYxF-RBgHaGh?w=1024&h=902&rs=1&pid=ImgDetMain" alt="telephone" width="100" height="100"></center><br>
-    <center>123 Sukhumvit 23, Bangkok 12345, Thailand. Tel 0123456789</center>
+    <center>020 Sunattha, 295 Nannalin, 304 Pornchanok</center>
     <center>e-mail : contact@g.swu.ac.th</center>
     <br>
 </footer>
